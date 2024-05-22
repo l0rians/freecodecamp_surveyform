@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>FreeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title" class="text-center">FreeCodeCamp Survey Form</h1>
+      <p id="description" class="text-center">
+        Thank you for taking the time to help us improve the platform
+      </p>
+
+      <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input id="name" type="text" required placeholder="Enter your name" />
+
+        <label for="email" id="email-label">Email:</label>
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="Enter your email"
+        />
+
+        <label for="number" id="number-label">Age:</label>
+        <input
+          id="number"
+          type="number"
+          min="0"
+          max="30"
+          placeholder="Enter your age"
+        />
+
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select id="dropdown">
+          <option value="Student">Student</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <div class="radio-group">
+          <input
+            type="radio"
+            name="recommend"
+            id="recommend-maybe"
+            value="Maybe"
+          />
+          <label for="recommend-maybe">Maybe</label>
+
+          <input
+            type="radio"
+            name="recommend"
+            id="recommend-definitely"
+            value="Definitely"
+          />
+          <label for="recommend-definitely">Definitely</label>
+        </div>
+        <p></p>
+        <label>What are your favorite topics to study?</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="frontend" value="Frontend" />
+          <label for="frontend">Frontend</label>
+
+          <input type="checkbox" id="backend" value="Backend" />
+          <label for="backend">Backend</label>
+        </div>
+        <p></p>
+        <label for="comments">Comments:</label>
+        <textarea id="comments"></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

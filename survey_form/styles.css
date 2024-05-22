@@ -1,0 +1,85 @@
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+#title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#survey-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#survey-form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#survey-form input[type="text"],
+#survey-form input[type="email"],
+#survey-form input[type="number"],
+#survey-form textarea,
+#survey-form select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#survey-form .radio-group,
+#survey-form .checkbox-group {
+  margin-top: 10px;
+}
+
+#survey-form .radio-group input[type="radio"],
+#survey-form .checkbox-group input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#survey-form textarea {
+  width: calc(100% - 22px);
+  height: 150px;
+}
+
+#submit {
+  display: block;
+  width: calc(100% - 22px);
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #0056b3;
+}
+
+#survey-form .radio-group label,
+#survey-form .checkbox-group label {
+  display: inline-block;
+  margin-bottom: 0;
+}
